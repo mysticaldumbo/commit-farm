@@ -2,7 +2,7 @@
 cls
 @echo off
 setlocal EnableDelayedExpansion
-set "chars=ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789"
+set "chars=ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789!@#$%^&*()+=-_|\}]{[~`"
 set "RAND="
 for /l %%i in (1,1,20) do (
     set /a "randIndex=!RANDOM! %% 62"
