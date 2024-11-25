@@ -1,7 +1,6 @@
 :start
 cls
 @echo off
-setlocal EnableDelayedExpansion
 set "chars=ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789!@#$%^&*()+=-_|\}]{[~`"
 set "RAND="
 for /l %%i in (1,1,20) do (
@@ -16,4 +15,3 @@ git add .
 git commit -m "%RAND%"
 git push origin
 goto :start
-endlocal
